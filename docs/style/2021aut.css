@@ -1,0 +1,187 @@
+@import "./common.css";
+body {
+  background-color: var(--fallen-leaf);
+  opacity: 1;
+  width: var(--max-width);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  z-index: 0;
+}
+.headerImg {
+  width: var(--max-width);
+  margin: 0;
+  padding: 0;
+  opacity: 0.72;
+  background-color: white;
+}
+.headerImg img {
+  width: var(--max-width);
+  margin: 0;
+  padding: 0;
+}
+.contentContainer {
+  background-color: white;
+  opacity: 0.72;
+  width: var(--max-width);
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  z-index: 1;
+}
+.contentContainer .blank {
+  width: 75%;
+  height: 0;
+  margin: 0;
+  margin-top: 0;
+  padding: 0.001em;
+}
+.contentContainer .blank.ht {
+  height: 3em;
+}
+.contentContainer .content {
+  width: 75%;
+  min-height: 4.5em;
+  margin: auto;
+  margin-top: 1.25em;
+  padding: 1.3em;
+  border: 0.1em solid var(--fallen-leaf);
+  border-radius: 1.5em;
+  z-index: 5;
+}
+.heading {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: var(--potato);
+  padding: 0;
+  line-height: 2.5em;
+  padding-left: 0;
+  border-bottom: 0.25em dotted var(--fallen-leaf);
+}
+.content:not(p) {
+  text-align: center;
+}
+.nowLoading::before {
+  content: "Coming Soon";
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--potato);
+}
+.nowLoading::after {
+  content: "Now Loading...";
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--potato);
+}
+.abstract .title{
+  font-size: 2em;
+}
+.abstract .scheduleAbst{
+  text-align: left;
+  font-size: 1.25em;
+  width: 55%;
+  margin: auto;
+  padding: 1em;
+}
+.broadcast .embedYouTube {
+  margin: auto;
+  margin-top: 0.5em;
+  width: 75%;
+  aspect-ratio: 560 / 315;
+  background-color: rgba(255,255,255,1);
+  opacity: 1;
+  z-index: 10;
+}
+.broadcast .embedYouTube iframe {
+  margin: auto;
+  margin-top: 0.5em;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background-color: black;
+}
+.schedule div.timetable {
+  background-color: white;
+  opacity: 1;
+  z-index: 8;
+}
+.schedule table.timetable {
+  width: 85%;
+  margin: auto;
+  border-collapse: collapse;
+  border-color: var(--potato);
+  background-color: none;
+  opacity: 1;
+  z-index: 10;
+}
+.schedule table.timetable tr {
+  height: 2.5em;
+  padding: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  background-color: none;
+}
+.schedule table.timetable tr.rest {
+  background-color: gray;
+  color: white;
+}
+.schedule table.timetable thead tr {
+  background-color: var(--fallen-leaf);
+  color: var(--potato);
+}
+.schedule table.timetable td:nth-child(1) {
+  width: 2em;
+}
+.schedule table.timetable td:nth-child(2) {
+  width: 6em;
+}
+.schedule table.timetable td:nth-child(3) {
+  width: 8em;
+}
+.schedule table.timetable td:nth-child(4) {
+  text-align: center;
+}
+.schedule table.timetable td:nth-child(5) {
+  text-align: left;
+}
+.schedule table.timetable td:nth-child(6) {
+  width: 3em;
+}
+.orgn{
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+.sponsor {
+  width: 35em;
+  margin: auto;
+}
+.sponsor .name {
+  font-size: 3.5em;
+  font-weight: bold;
+  line-height: 0.8em;
+  color: var(--potato);
+}
+.sponsor.KIITA .name {
+  color: #640125;
+}
+.sponsor .desc {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: var(--potato);
+}
+.sponsor a {
+  color: var(--potato);
+  text-decoration: none;
+  border-bottom: none;
+}
+.sponsor.KIITA a {
+  color: #640125;
+}
+
+.sponsor img {
+  height: 1em;
+  display: inline;
+}
+.sub {
+  font-size: 0.5em;
+}
