@@ -77,11 +77,23 @@ body {
   font-size: 2em;
 }
 .abstract .scheduleAbst{
+  --number: 55;
+  --guess01: calc((var(--number) + ( var(--number) / var(--number))) / 2);
+  --guess02: calc((var(--guess01) + ( var(--number) / var(--guess01))) / 2);
+  --guess03: calc((var(--guess02) + ( var(--number) / var(--guess02))) / 2);
+  --guess04: calc((var(--guess03) + ( var(--number) / var(--guess03))) / 2);
+  --guess05: calc((var(--guess04) + ( var(--number) / var(--guess04))) / 2);
+  --guess06: calc((var(--guess05) + ( var(--number) / var(--guess05))) / 2);
+  --guess07: calc((var(--guess06) + ( var(--number) / var(--guess06))) / 2);
+  --guess08: calc((var(--guess07) + ( var(--number) / var(--guess07))) / 2);
+  --guess09: calc((var(--guess08) + ( var(--number) / var(--guess08))) / 2);
+  --guess10: calc((var(--guess09) + ( var(--number) / var(--guess09))) / 2);
   text-align: left;
   font-size: 1.25em;
-  width: 55%;
+  width: calc(85% - var(--guess10) * 1%);
   margin: auto;
   padding: 1em;
+  border: 1px solid var(--fallen-leaf);
 }
 .broadcast .embedYouTube {
   margin: auto;
@@ -152,7 +164,7 @@ body {
   font-weight: bold;
 }
 .sponsor {
-  width: 35em;
+  width: 70%;
   margin: auto;
 }
 .sponsor .name {
