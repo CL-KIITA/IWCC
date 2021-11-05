@@ -52,7 +52,7 @@ body {
   padding: 0;
   line-height: 2.5em;
   padding-left: 0;
-  border-bottom: 0.25em dotted var(--fallen-leaf);
+  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
 }
 .subHeading {
   font-size: 1.9em;
@@ -61,7 +61,7 @@ body {
   padding: 0;
   line-height: 2.5em;
   padding-left: 0;
-  border-bottom: 0.25em dotted var(--fallen-leaf);
+  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
 }
 .content:not(p) {
   text-align: center;
@@ -172,6 +172,12 @@ body {
   height: 1.5em;
   color: var(--potato);
 }
+.schedule table.timetable tbody tr.now {
+  background-color: var(--potato-light);
+  color: var(--fallen-leaf);
+  font-weight: bold;
+  font-size: 1.1em;
+}
 .schedule table.timetable td:nth-child(1) {
   width: 1em;
 }
@@ -213,6 +219,91 @@ body {
 .orgn{
   margin-top: 0.5em;
   font-weight: bold;
+}
+.resources .present{
+  margin-top: 0.85em;
+}
+.resources .present details .item.gsl iframe{
+  width: 85%;
+  aspect-ratio: 960 / 569;
+}
+.resources .present details .item {
+  border-top: 0.2em solid var(--potato);
+}
+.resources .present details summary {
+  text-align: left;
+  border-radius: 1em;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  list-style: none;
+  font-size: 1.65em;
+  font-weight: bold;
+  color: var(--potato);
+  padding: 0;
+  line-height: 2.5em;
+  padding-left: 2.2em;
+  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
+}
+.resources .present details summary:hover {
+  background: #eee;
+  transition: all linear 0.2s;
+}
+.resources .present details summary::-webkit-details-marker {
+  display: none;
+}
+.resources .present details summary span{
+  font-size: 0.8em
+}
+.resources .present details {
+  background: var(--milk-fallen-leaf-light);
+  border: 1px solid var(--fallen-leaf);
+  border-radius: 1em;
+  margin-bottom: 0.2em;
+  font-size: 1em;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.resources .present details summary::before {
+  content: none !important;
+}
+
+.resources .present details summary::after {
+  content: "＋";
+  color: var(--potato-light);
+  font-weight: bolder;
+  float: right;
+  width: 3em;
+  text-align: center;
+}
+
+.resources .present details[open] summary::after {
+  content: "−";
+  margin-top: -0.1em;
+}
+
+.resources .present details[open] div {
+  animation: accordion 0.4s linear;
+  overflow: hidden;
+  /**border-bottom: 2px solid #eee;*/
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@keyframes accordion {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  70% {
+    opacity: 0;
+    height: 200px;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .sponsor {
   width: 70%;
