@@ -228,6 +228,7 @@ body {
   aspect-ratio: 960 / 569;
 }
 .resources .present details .item {
+  display: none;
   border-top: 0.2em solid var(--potato);
 }
 .resources .present details summary {
