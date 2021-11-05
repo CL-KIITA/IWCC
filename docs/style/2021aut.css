@@ -169,17 +169,17 @@ body {
 }
 .schedule table.timetable thead tr {
   background-color: var(--fallen-leaf);
-  height: 2em;
+  height: 1.5em;
   color: var(--potato);
 }
 .schedule table.timetable td:nth-child(1) {
-  width: 2em;
+  width: 1em;
 }
 .schedule table.timetable td:nth-child(2) {
-  width: 6em;
+  width: 4em;
 }
 .schedule table.timetable td:nth-child(3) {
-  width: 8em;
+  width: 6em;
   overflow-x: hidden;
   overflow-y: auto;
 }
