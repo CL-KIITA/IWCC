@@ -5,6 +5,9 @@
 /* Theme of the 2021 aut */
 @import url(./theme.2021aut.css);
 
+/* Tag Style */
+@import url(./tag.common.css);
+
 body {
   background-color: var(--milk-fallen-leaf);
   opacity: 1;
@@ -86,8 +89,11 @@ body {
   z-index: 8;
   width: 100%;
 }
+.schedule{
+  padding: 0.7em !important;
+}
 .schedule table.timetable {
-  width: 95%;
+  width: 100%;
   margin: auto;
   border-collapse: collapse;
   border-color: var(--potato);
@@ -95,7 +101,8 @@ body {
   z-index: 10;
 }
 .schedule table.timetable tr {
-  height: 3.2em;
+  font-family: "TPGothic-GT01";
+  height: 2em;
   background-color: var(--milk-fallen-leaf-light);
   color: var(--potato-light);
 }
@@ -118,14 +125,15 @@ body {
   width: 1em;
 }
 .schedule table.timetable td:nth-child(2) {
-  width: 4em;
+  width: 3.5em;
 }
 .schedule table.timetable td:nth-child(3) {
-  width: 6em;
+  width: 4em;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .schedule table.timetable td:nth-child(4) {
+  min-width: 6.5em;
   text-align: center;
   overflow-x: hidden;
   overflow-y: auto;
@@ -136,15 +144,17 @@ body {
   overflow-y: auto;
 }
 .schedule table.timetable td:nth-child(6) {
-  width: 3em;
+  width: 2.5em;
 }
-.schedule table.timetable tbody td:nth-child(6){
+.schedule table.timetable tbody td:nth-child(7){
+  width: 1.5em;
   writing-mode: vertical-lr;
 }
 .schedule table.timetable tr.yet td:nth-child(3),
 .schedule table.timetable tr.yet td:nth-child(4),
 .schedule table.timetable tr.yet td:nth-child(5),
-.schedule table.timetable tr.yet td:nth-child(6) {
+.schedule table.timetable tr.yet td:nth-child(6),
+.schedule table.timetable tr.yet td:nth-child(7) {
   background-color: lightgray;
   color: darkgray;
   content: "未定枠";
@@ -159,13 +169,33 @@ body {
 .resources .present{
   margin-top: 0.85em;
 }
+.resources .present details .item.psl iframe{
+  width: 95%;
+  aspect-ratio: 960 / 569;
+}
+.resources .present details .item.pslx iframe{
+  width: 100%;
+  aspect-ratio: 960 / 569;
+}
 .resources .present details .item.gsl iframe{
   width: 85%;
   aspect-ratio: 960 / 569;
 }
 .resources .present details .item {
-  display: none;
   border-top: 0.2em solid var(--potato);
+}
+.resources .present.hid details .item {
+  display: none;
+}
+.resources .present details .item p.desc{
+  text-align: left;
+}
+a.ref{
+  background-color: var(--potato);
+  color: var(--milk-fallen-leaf);
+  text-decoration: none;
+  padding: 0.2em 0.5em;
+  border-radius: 0.8em;
 }
 .resources .present details summary {
   text-align: left;
@@ -174,7 +204,7 @@ body {
   cursor: pointer;
   display: block;
   list-style: none;
-  font-size: 1.65em;
+  font-size: 1.45em;
   font-weight: bold;
   color: var(--potato);
   padding: 0;
@@ -189,8 +219,14 @@ body {
 .resources .present details summary::-webkit-details-marker {
   display: none;
 }
-.resources .present details summary span{
-  font-size: 0.8em
+.resources .present details summary div{
+  font-size: 0.8em;
+  line-height: 0.8em;
+  margin-top: 0.1em;
+  margin-bottom: 1em;
+  margin-right: 2em;
+  text-align: right;
+  padding-top: 0em;
 }
 .resources .present details {
   background: var(--milk-fallen-leaf-light);
@@ -208,6 +244,8 @@ body {
 }
 
 .resources .present details summary::after {
+  position:relative;
+  top: -4em;
   content: "＋";
   color: var(--potato-light);
   font-weight: bolder;

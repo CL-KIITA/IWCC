@@ -1,0 +1,101 @@
+@import url(./fonts.common.css);
+/* Tag Style */
+:root{
+  /* for default theme */
+  --tag-bg: white;
+  --tag-fg: black;
+  /* for field tag */
+  --world-bg:#1eaa39;
+  --lang-bg: #c06080;
+  --theo-bg: #00a199;
+  --tech-bg: #f29600;
+  --std-bg: #910782;
+  --organ-bg: #aaaf00;
+  --world-fg: white;
+  --lang-fg: white;
+  --theo-fg: white;
+  --tech-fg: black;
+  --std-fg: white;
+  --organ-fg: black;
+  /** for session tag */
+  --intro-bg: #1d2087;
+  --expl-bg: #65ab31;
+  --prog-bg: #e17b34;
+  --repo-bg: #e62f8b;
+  --intro-fg: white;
+  --expl-fg: white;
+  --prog-fg: white;
+  --repo-fg: white;
+}
+span.tag{
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.2em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  padding-left: 0.5em;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 1.0em;
+  font-family: "TPGothic-GT01";
+  min-width: 2.8em;
+  height: 1.1em;
+  background-color: var(--tag-bg);
+  color: var(--tag-fg);
+  font-weight: 300;
+  --half: 0.7em;
+  --hPls: 1.9em;
+  --hSec: 4.6em;
+  border-radius: var(--hSec) var(--half) var(--half) var(--hSec) / var(--hPls) var(--half) var(--half) var(--hPls);
+  content: attr(field);
+}
+/*世界*/
+span.tag[field="world"]{
+  background-color: var(--world-bg);
+  color: var(--world-fg);
+}
+/*言語*/
+span.tag[field="lang"]{
+  background-color: var(--lang-bg);
+  color: var(--lang-fg);
+}
+/*理論*/
+span.tag[field="theo"]{
+background-color: var(--theo-bg);
+color: var(--theo-fg);
+}
+/*技術*/
+span.tag[field="tech"]{
+  background-color: var(--tech-bg);
+  color: var(--tech-fg);
+}
+/*標準*/
+span.tag[field="std"]{
+  background-color: var(--std-bg);
+  color: var(--std-fg);
+}
+/*生命体*/
+span.tag[field="organ"]{
+  background-color: var(--organ-bg);
+  color: var(--organ-fg);
+}
+/*紹介*/
+span.tag[session="intro"]{
+  background-color: var(--intro-bg);
+  color: var(--intro-fg);
+}
+/*解説*/
+span.tag[session="expl"]{
+  background-color: var(--expl-bg);
+  color: var(--expl-fg);
+}
+/*進捗*/
+span.tag[session="prog"]{
+  background-color: var(--prog-bg);
+  color: var(--prog-fg);
+}
+/*報告*/
+span.tag[session="repo"]{
+  background-color: var(--repo-bg);
+  color: var(--repo-fg);
+}
