@@ -1,2 +1,4 @@
 *.js.deps
 *.js.map
+*.c
+*.exe
