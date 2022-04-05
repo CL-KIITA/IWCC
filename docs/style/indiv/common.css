@@ -1,59 +1,29 @@
-/* Common Style */
-@import url(./main.common.css);
-
-
-/* Theme of the 2021 aut */
-@import url(./theme.2021aut.css);
-
-/* Tag Style */
-@import url(./tag.common.css);
+/* Individuals Style */
 
 body {
-  background-color: var(--milk-fallen-leaf);
   opacity: 1;
   width: var(--max-width);
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
   z-index: 0;
   position: relative;
 }
-.contentContainer .content {
-  border: 0.1em solid var(--fallen-leaf);
-}
-.heading {
-  color: var(--potato);
-  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
-}
-.subHeading {
-  color: var(--potato);
-  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
-}
-.nowLoading::before {
-  color: var(--potato);
-}
-.nowLoading::after {
-  color: var(--potato);
-}
-.mainArticle{
-  /*border: 1px solid var(--fallen-leaf);*/
-}
 
-.abstract .title{
+.abstract .title {
   font-size: 2em;
 }
-.abstract .scheduleAbst{
+.abstract .scheduleAbst {
   --number: 55;
-  --guess01: calc((var(--number) + ( var(--number) / var(--number))) / 2);
-  --guess02: calc((var(--guess01) + ( var(--number) / var(--guess01))) / 2);
-  --guess03: calc((var(--guess02) + ( var(--number) / var(--guess02))) / 2);
-  --guess04: calc((var(--guess03) + ( var(--number) / var(--guess03))) / 2);
-  --guess05: calc((var(--guess04) + ( var(--number) / var(--guess04))) / 2);
-  --guess06: calc((var(--guess05) + ( var(--number) / var(--guess05))) / 2);
-  --guess07: calc((var(--guess06) + ( var(--number) / var(--guess06))) / 2);
-  --guess08: calc((var(--guess07) + ( var(--number) / var(--guess07))) / 2);
-  --guess09: calc((var(--guess08) + ( var(--number) / var(--guess08))) / 2);
-  --guess10: calc((var(--guess09) + ( var(--number) / var(--guess09))) / 2);
+  --guess01: calc((var(--number) + (var(--number) / var(--number))) / 2);
+  --guess02: calc((var(--guess01) + (var(--number) / var(--guess01))) / 2);
+  --guess03: calc((var(--guess02) + (var(--number) / var(--guess02))) / 2);
+  --guess04: calc((var(--guess03) + (var(--number) / var(--guess03))) / 2);
+  --guess05: calc((var(--guess04) + (var(--number) / var(--guess04))) / 2);
+  --guess06: calc((var(--guess05) + (var(--number) / var(--guess05))) / 2);
+  --guess07: calc((var(--guess06) + (var(--number) / var(--guess06))) / 2);
+  --guess08: calc((var(--guess07) + (var(--number) / var(--guess07))) / 2);
+  --guess09: calc((var(--guess08) + (var(--number) / var(--guess08))) / 2);
+  --guess10: calc((var(--guess09) + (var(--number) / var(--guess09))) / 2);
   text-align: left;
   font-size: 1.25em;
   width: calc(85% - var(--guess10) * 1%);
@@ -61,11 +31,9 @@ body {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding: 1em;
-  border: 1px solid var(--fallen-leaf);
 }
-.abstract .scheduleAbst ul{
+.abstract .scheduleAbst ul {
   margin: 0;
-  /*border: 1px solid var(--fallen-leaf);*/
 }
 .broadcast .embedYouTube {
   margin: auto;
@@ -77,6 +45,17 @@ body {
   position: relative;
   transform: rotate(360deg);
 }
+.broadcast .embedYouTube.ComingSoon {
+  border: 0.05em solid black;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.broadcast .embedYouTube.ComingSoon > :first-child {
+  padding-top: calc(30 * var(--bases));
+}*/
 .broadcast .embedYouTube iframe {
   margin: auto;
   margin-top: 0.5em;
@@ -89,35 +68,27 @@ body {
   z-index: 8;
   width: 100%;
 }
-.schedule{
+.schedule {
   padding: 0.7em !important;
 }
 .schedule table.timetable {
   width: 100%;
   margin: auto;
   border-collapse: collapse;
-  border-color: var(--potato);
   opacity: 1;
   z-index: 10;
 }
 .schedule table.timetable tr {
-  font-family: "TPGothic-GT01";
   height: 2em;
-  background-color: var(--milk-fallen-leaf-light);
-  color: var(--potato-light);
 }
 .schedule table.timetable tr.rest {
   background-color: gray;
   color: white;
 }
 .schedule table.timetable thead tr {
-  background-color: var(--fallen-leaf);
   height: 1.5em;
-  color: var(--potato);
 }
 .schedule table.timetable tbody tr.now {
-  background-color: var(--potato-light);
-  color: var(--fallen-leaf);
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -146,7 +117,7 @@ body {
 .schedule table.timetable td:nth-child(6) {
   width: 2.5em;
 }
-.schedule table.timetable tbody td:nth-child(7){
+.schedule table.timetable tbody td:nth-child(7) {
   width: 1.5em;
   writing-mode: vertical-lr;
 }
@@ -159,40 +130,35 @@ body {
   color: darkgray;
   content: "未定枠";
 }
-.schedule table.timetable td{
+.schedule table.timetable td {
   padding: 0.5em;
 }
-.orgn{
+.orgn {
   margin-top: 0.5em;
   font-weight: bold;
 }
-.resources .present{
+.resources .present {
   margin-top: 0.85em;
 }
-.resources .present details .item.psl iframe{
+.resources .present details .item.psl iframe {
   width: 95%;
   aspect-ratio: 960 / 569;
 }
-.resources .present details .item.pslx iframe{
+.resources .present details .item.pslx iframe {
   width: 100%;
   aspect-ratio: 960 / 569;
 }
-.resources .present details .item.gsl iframe{
+.resources .present details .item.gsl iframe {
   width: 85%;
   aspect-ratio: 960 / 569;
-}
-.resources .present details .item {
-  border-top: 0.2em solid var(--potato);
 }
 .resources .present.hid details .item {
   display: none;
 }
-.resources .present details .item p.desc{
+.resources .present details .item p.desc {
   text-align: left;
 }
-a.ref{
-  background-color: var(--potato);
-  color: var(--milk-fallen-leaf);
+a.ref {
   text-decoration: none;
   padding: 0.2em 0.5em;
   border-radius: 0.8em;
@@ -206,11 +172,9 @@ a.ref{
   list-style: none;
   font-size: 1.45em;
   font-weight: bold;
-  color: var(--potato);
   padding: 0;
   line-height: 2.5em;
   padding-left: 2.2em;
-  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
 }
 .resources .present details summary:hover {
   background: #eee;
@@ -219,7 +183,7 @@ a.ref{
 .resources .present details summary::-webkit-details-marker {
   display: none;
 }
-.resources .present details summary div{
+.resources .present details summary div {
   font-size: 0.8em;
   line-height: 0.8em;
   margin-top: 0.1em;
@@ -229,8 +193,6 @@ a.ref{
   padding-top: 0em;
 }
 .resources .present details {
-  background: var(--milk-fallen-leaf-light);
-  border: 1px solid var(--fallen-leaf);
   border-radius: 1em;
   margin-bottom: 0.2em;
   font-size: 1em;
@@ -238,24 +200,20 @@ a.ref{
   width: 75%;
   margin: 0 auto;
 }
-
 .resources .present details summary::before {
   content: none !important;
 }
-
 .resources .present details summary::after {
-  position:relative;
+  position: relative;
   top: -4em;
-  content: "＋";
-  color: var(--potato-light);
+  content: "+";
   font-weight: bolder;
   float: right;
   width: 3em;
   text-align: center;
 }
-
 .resources .present details[open] summary::after {
-  content: "−";
+  content: "-";
   margin-top: -0.1em;
 }
 
@@ -288,48 +246,18 @@ a.ref{
   font-size: 300%;
   font-weight: bold;
   line-height: 0.8em;
-  color: var(--potato);
 }
-.sponsor.flowBlock{
+.sponsor.flowBlock {
   display: flex;
   flex-wrap: wrap;
-}
-.sponsor.flowItem{
-  width: 36%;
-}
-.sponsor.SCJ .name {
-  color: var(--scj-red);
-}
-.sponsor.KIITA .name {
-  color: var(--kiita-grape);
-}
-.sponsor.Ziphil .name {
-  color: var(--ziphil-black);
-}
-.sponsor.Yuri .name {
-  color: var(--yuri-skyblue);
 }
 .sponsor .desc {
   font-size: 1.2em;
   line-height: 1.2em;
-  color: var(--potato);
 }
 .sponsor a {
-  color: var(--potato);
   text-decoration: none;
   border-bottom: none;
-}
-.sponsor.SCJ a {
-  color: var(--scj-red);
-}
-.sponsor.KIITA a {
-  color: var(--kiita-grape);
-}
-.sponsor.Ziphil a{
-  color: var(--ziphil-black);
-}
-.sponsor.Yuri a{
-  color: var(--yuri-skyblue);
 }
 
 .sponsor img {
@@ -339,27 +267,26 @@ a.ref{
 .sub {
   font-size: 0.5em;
 }
-a.regisFormLink{
-  color: var(--potato);
+a.regisFormLink {
   text-decoration: none;
 }
-@media screen and (max-width: 599px){
-  a.regisFormLink{
-    color: var(--potato);
+@media screen and (max-width: 599px) {
+  a.regisFormLink {
     line-height: 2.2em;
   }
   a.regisFormLink::before {
     content: "・　";
   }
-  a.regisFormLink:not(:first-child){
+  a.regisFormLink:not(:first-child) {
     margin-top: 0.5em;
   }
 }
+
 @media screen and (min-width: 660px) {
   .delim > * {
     display: none;
   }
-  .delim::before{
+  .delim::before {
     content: "　 ・ 　";
   }
 }

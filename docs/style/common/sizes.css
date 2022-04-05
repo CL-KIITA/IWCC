@@ -2,4 +2,5 @@
 
 :root {
   --max-width: 98.8vw;
+  --bases: calc((1vh+1vw)/2);
 }

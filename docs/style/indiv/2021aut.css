@@ -1,0 +1,136 @@
+/* Common Style */
+@import url(./../common/main.css);
+
+/* Individuals Style */
+@import url(./common.css);
+
+/* Theme of the 2021 aut */
+@import url(./theme.2021aut.css);
+
+/* Tag Style */
+@import url(./../common/tag.css);
+
+body {
+  background-color: var(--milk-fallen-leaf);
+  font-family: "Montserrat", sans-serif;
+}
+.contentContainer .content {
+  border: 0.1em solid var(--fallen-leaf);
+}
+.heading {
+  color: var(--potato);
+  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
+}
+.subHeading {
+  color: var(--potato);
+  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
+}
+.nowLoading::before {
+  color: var(--potato);
+}
+.nowLoading::after {
+  color: var(--potato);
+}
+.headNavigate {
+  color: var(--potato);
+  border-bottom: 0.17em solid var(--fallen-leaf);
+}
+.headNavigate a {
+  color: var(--potato-light);
+}
+/*
+.mainArticle {
+  border: 1px solid var(--fallen-leaf);
+}
+*/
+
+.abstract .scheduleAbst {
+  border: 1px solid var(--fallen-leaf);
+}
+/*
+.abstract .scheduleAbst ul {
+  border: 1px solid var(--fallen-leaf);
+}
+*/
+
+.schedule table.timetable {
+  border-color: var(--potato);
+}
+.schedule table.timetable tr {
+  font-family: "TPGothic-GT01";
+  background-color: var(--milk-fallen-leaf-light);
+  color: var(--potato-light);
+}
+.schedule table.timetable thead tr {
+  background-color: var(--fallen-leaf);
+  color: var(--potato);
+}
+.schedule table.timetable tbody tr.now {
+  background-color: var(--potato-light);
+  color: var(--fallen-leaf);
+}
+.resources .present details .item {
+  border-top: 0.2em solid var(--potato);
+}
+a.ref {
+  background-color: var(--potato);
+  color: var(--milk-fallen-leaf);
+}
+.resources .present details summary {
+  color: var(--potato);
+  text-decoration: underline dotted var(--fallen-leaf) 0.25em;
+}
+.resources .present details {
+  background: var(--milk-fallen-leaf-light);
+  border: 1px solid var(--fallen-leaf);
+}
+
+.resources .present details summary::after {
+  color: var(--potato-light);
+}
+
+.sponsor .name {
+  color: var(--potato);
+}
+
+.sponsor.flowItem {
+  width: 36%;
+}
+.sponsor.SCJ .name {
+  color: var(--scj-red);
+}
+.sponsor.KIITA .name {
+  color: var(--kiita-grape);
+}
+.sponsor.Ziphil .name {
+  color: var(--ziphil-black);
+}
+.sponsor.Yuri .name {
+  color: var(--yuri-skyblue);
+}
+.sponsor .desc {
+  color: var(--potato);
+}
+.sponsor a {
+  color: var(--potato);
+}
+.sponsor.SCJ a {
+  color: var(--scj-red);
+}
+.sponsor.KIITA a {
+  color: var(--kiita-grape);
+}
+.sponsor.Ziphil a {
+  color: var(--ziphil-black);
+}
+.sponsor.Yuri a {
+  color: var(--yuri-skyblue);
+}
+a.regisFormLink {
+  color: var(--potato);
+}
+@media screen and (max-width: 599px) {
+  a.regisFormLink {
+    color: var(--potato);
+  }
+}
