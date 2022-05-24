@@ -1,9 +1,9 @@
-/* Theme of the 2021 aut */
+/* Theme of the 2022 spr */
 :root {
   --cherry: #fcd4d7;
   --cherry-dark: #f2a1ad;
   --cherry-light: #fcf2f3;
-  --cherry-middle: #fcd4d7;
+  --cherry-middle: #fce3e5;
   --cherry-grad: linear-gradient(
     180deg,
     rgba(242, 161, 173, 1) 0%,

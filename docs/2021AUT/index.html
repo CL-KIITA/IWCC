@@ -35,13 +35,13 @@
   <body>
     <div class="contentContainer headNavigate">
       <div class="BreadCrumb">
-        <a href="./../index.html">IWCC</a> &gt;
-        <a href="./../index.html#indiv"> Individuals </a> &gt; 2021 Harvest
+        <a href="/IWCC/">IWCC</a> &gt;
+        2021 Harvest
       </div>
       <div class="Adjacents">
-        <span>⇐ Prev<br />(First)</span>
+        <!-- <span>⇐ Prev<br />(First)</span> -->
         <span
-          >Next ⇒<br /><a href="./../2022SPR/index.html">2022 Spring</a></span
+          >Next ⇒<br /><a href="/IWCC/2022SPR/">2022 Spring</a></span
         >
       </div>
     </div>
@@ -50,9 +50,9 @@
     </div>
     <div class="contentContainer">
       <div class="blank"></div>
-      <div class="content abstract">
-        <span class="heading">概要 | Abstract</span><br /><br />
-        <div class="title">第一回 秋季 想像世界創作会議 ～HARVEST～</div>
+      <div id="abstract" class="content abstract">
+        <div class="heading">概要 | Abstract</div>
+        <div class="title">第一回 想像世界創作会議: 2021年秋 ～HARVEST～</div>
 
         <div class="desc mainArticle">
           　"創作世界" や "人工言語"
@@ -71,8 +71,30 @@
           </ul>
         </div>
       </div>
-      <div class="content join">
-        <span class="heading">参加する | Join</span><br /><br />
+      <div id="broadcast" class="content broadcast">
+        <div class="heading">配信アーカイブ | Broadcast Archive</div>
+        <!-- <p>
+          想像世界創作会議は、SCJにて行われているイベントに直接参加するほか、以下の<a
+            href="https://www.youtube.com/watch?v=Hk2SwNqeCeE"
+            >ミラーLIVE</a
+          >にて視聴することもできます。<br />
+          SCJには次の招待リンクから誰でも参加できます。･･･
+          <a href="https://discord.gg/59X2P5EpF2">参加する</a>
+        </p> -->
+        <div class="embedYouTube">
+          <iframe
+            src="https://www.youtube.com/embed/Hk2SwNqeCeE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          ></iframe>
+        </div>
+      </div>
+      <!-- <div id="join" class="content join">
+        <div class="heading">参加する | Join</div>
         入力フォームがあるので参加したい方は入力をお願いします。<br />
         受講者は登録は必須ではないですがアンケートがあるのでお答えくださると幸いです。<br /><br />
         <a href="https://forms.gle/srhRozHMfivZSDKn8" class="regisFormLink"
@@ -81,13 +103,13 @@
         <a href="https://forms.gle/Mie3XY39Ku9PAVUJ9" class="regisFormLink"
           >IWCC 受講者登録フォーム</a
         ><br /><br />
-      </div>
-      <div class="content schedule">
-        <span class="heading">タイムテーブル | Time Table</span><br />
-        <p>
+      </div> -->
+      <div id="schedule" class="content schedule">
+        <div class="heading">タイムテーブル | Time Table</div>
+        <!-- <p>
           以下のスケジュールで発表などが予定されています。<br />
           なお、発表未定枠など、開催日までにスケジュールの変更がある可能性があります。<br />
-        </p>
+        </p> -->
         <div class="timetable">
           <table class="timetable" border="1">
             <thead>
@@ -242,31 +264,8 @@
           </table>
         </div>
       </div>
-      <div class="content broadcast">
-        <span class="heading">配信 | Broadcast</span><br /><br />
-        <p>
-          想像世界創作会議は、SCJにて行われているイベントに直接参加するほか、以下の<a
-            href="https://www.youtube.com/watch?v=Hk2SwNqeCeE"
-            >ミラーLIVE</a
-          >にて視聴することもできます。<br />
-          SCJには次の招待リンクから誰でも参加できます。･･･
-          <a href="https://discord.gg/59X2P5EpF2">参加する</a>
-        </p>
-        <br />
-        <div class="embedYouTube">
-          <iframe
-            src="https://www.youtube.com/embed/Hk2SwNqeCeE"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-          ></iframe>
-        </div>
-      </div>
-      <div class="content resources">
-        <span class="heading">発表資料 | Resources</span><br />
+      <div id="resources" class="content resources">
+        <div class="heading">発表資料 | Resources</div>
         <div class="present">
           <details>
             <summary>
@@ -342,7 +341,7 @@
             </summary>
             <div class="item gsl">
               <iframe
-                src="./../assets/slides/2021AUT/AI神_創作言語のための日本語文法/index.html"
+                src="./../assets/slides/2021AUT/AI神_創作言語のための日本語文法/"
                 frameborder="0"
                 allowfullscreen="true"
                 mozallowfullscreen="true"
@@ -402,14 +401,14 @@
           </details>
         </div>
       </div>
-      <div class="content sponsors">
-        <span class="heading">提供 | Sponsors</span><br /><br />
+      <div id="sponsors" class="content sponsors">
+        <div class="heading">提供 | Sponsors</div>
         <div class="sponsor SCJ">
           <span class="name">
             <a href="https://discord.gg/59X2P5EpF2">
               <img
                 src="https://static.miraheze.org/migdalwiki/7/7a/SCJ_Logo.png"
-                alt="SCJ"
+                alt=""
               />
               SCJ<br />
               <span class="sub">日本言語製作共同研究会 </span>
@@ -423,7 +422,7 @@
             <a href="https://github.com/CL-KIITA">
               <img
                 src="https://avatars.githubusercontent.com/u/89307710?s=200&v=4"
-                alt="CL-KIITA"
+                alt=""
               />
               CL-KIITA<br />
               <span class="sub"> 人工言語知識情報・情報技術事業体 </span>
@@ -441,7 +440,7 @@
               <a href="https://ziphil.com">
                 <img
                   src="https://yt3.ggpht.com/ytc/AKedOLQAdgOL89wHu9LTKKFaY_DdkmYdUv8QWXjfAdDX=s176-c-k-c0x00ffffff-no-rj"
-                  alt="Ziphil"
+                  alt=""
                 />
                 Ziphil<br />
                 <span class="sub"> Ziphil Shaleiras </span>
@@ -452,8 +451,8 @@
             <span class="name">
               <a href="https://twitter.com/udl_design">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1463813953445052417/SUjNk5_j_400x400.jpg"
-                  alt="Yuri"
+                  src="https://pbs.twimg.com/profile_images/1513708201166110721/pcJsk8Qo_400x400.jpg"
+                  alt=""
                 />
                 Yuri<br />
                 <span class="sub"> ゆりと架鉄とデザインと </span>
