@@ -1,0 +1,18 @@
+/* Theme of the 2021 aut */
+:root {
+  --cherry: #fcd4d7;
+  --cherry-dark: #f2a1ad;
+  --cherry-light: #fcf2f3;
+  --cherry-middle: #fcd4d7;
+  --cherry-grad: linear-gradient(
+    180deg,
+    rgba(242, 161, 173, 1) 0%,
+    rgba(245, 178, 187, 1) 41%,
+    rgba(249, 195, 201, 1) 59%,
+    rgba(252, 212, 215, 1) 69%,
+    rgba(252, 242, 243, 1) 84%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --harizuri: #79520b;
+  --wakakusa: #abc900;
+}
