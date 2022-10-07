@@ -108,6 +108,12 @@ a.ComingSoon {
   color: gray;
   pointer-events: none;
 }
+p.normalText{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  text-align: left;
+}
 .mainArticle {
   --number: 55;
   --guess01: calc((var(--number) + (var(--number) / var(--number))) / 2);
@@ -127,4 +133,12 @@ a.ComingSoon {
   margin-top: 0em;
   margin-bottom: 0.5em;
   padding: 1em;
+}
+span.footnote::after{
+  vertical-align: super;
+  font-size: 0.6em;
+  content: "※" attr(alt);
+}
+div.footnotes{
+  font-size: 0.9em;
 }
