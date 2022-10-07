@@ -111,6 +111,47 @@ a.ref {
   color: var(--harizuri-light);
 }
 
+
+img.momiji_f1{
+  width: 15vw;
+  position: absolute;
+  transform: scale(-1) translate(35vw, 10vw) rotate(15deg);
+}
+img.momiji_f2{
+  width: 20vw;
+  position: absolute;
+  transform: scale(-1) translate(39vw, 2vw) rotate(-63deg);
+}
+img.momiji_f3{
+  width: 20vw;
+  position: absolute;
+  transform: translate(-49vw, -7vw) rotate(43deg);
+}
+img.momiji_f4{
+  width: 19vw;
+  position: absolute;
+  transform: scale(-1) translate(-36vw, 9vw) rotate(43deg);
+}
+img.momiji_f5 {
+  width: 19vw;
+  position: absolute;
+  transform: scale(-1) translate(38vw, 17vw) rotate(-43deg);
+}
+img.momiji_b1{
+  width: 20vw;
+  position: absolute;
+  transform: translate(23vw, 2vw) rotate(-33deg);
+}
+img.momiji_b2{
+  width: 20vw;
+  position: absolute;
+  transform: scale(-1) translate(-28vw, 2vw) rotate(-43deg);
+}
+img.momiji_b3{
+  width: 17vw;
+  position: absolute;
+  transform: scale(-1) translate(35vw, 7vw) rotate(-43deg);
+}
 .sponsor .name {
   color: var(--fertile-soil);
 }
