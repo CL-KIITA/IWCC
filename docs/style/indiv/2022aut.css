@@ -1,0 +1,169 @@
+/* Common Style */
+@import url(./../common/main.css);
+
+/* Individuals Style */
+@import url(./common.css);
+
+/* Theme of the 2021 aut */
+@import url(./theme.2022aut.css);
+
+/* Tag Style */
+@import url(./../common/tag.css);
+
+body {
+  background-color: var(--cherry-light);
+  font-family: "Montserrat", sans-serif;
+}
+.contentContainer .content {
+  border: 0.1em solid var(--cherry-dark);
+}
+.heading {
+  color: var(--harizuri);
+  text-decoration: underline dotted var(--cherry-dark) 0.25em;
+}
+.subHeading {
+  color: var(--harizuri);
+  text-decoration: underline dotted var(--cherry-dark) 0.25em;
+}
+.abstract .programme dt {
+  color: var(--harizuri);
+  text-decoration: underline dotted var(--cherry-dark) 0.25em;
+}
+.headerImg {
+  background: var(--cherry-grad);
+  padding-bottom: calc(10 * var(--bases));
+  z-index: 40;
+}
+.headerImg img {
+  transform: translateY(calc(-10 * var(--bases)));
+  clip-path: inset(calc(10 * var(--bases)) 0 0 0);
+
+  z-index: 40;
+}
+.nowLoading::before {
+  color: var(--harizuri);
+}
+.nowLoading::after {
+  color: var(--harizuri);
+}
+.headNavigateWrap {
+  background-color: var(--cherry-dark);
+}
+.headNavigate {
+  color: var(--cherry-middle);
+  border-bottom: 0.17em solid var(--cherry);
+  z-index: 60;
+}
+.headNavigate a {
+  color: var(--cherry-light);
+}
+/*
+.mainArticle {
+  border: 1px solid var(--cherry-dark);
+}
+*/
+
+.abstract .scheduleAbst {
+  border: 1px solid var(--cherry-dark);
+}
+.abstract .programme{
+  border: 1px solid var(--cherry-dark);
+}
+/*
+.abstract .scheduleAbst ul {
+  border: 1px solid var(--cherry-dark);
+}
+*/
+
+.schedule table.timetable {
+  border-color: var(--harizuri);
+}
+.schedule table.timetable tr {
+  font-family: "TPGothic-GT01";
+  background-color: var(--cherry-light);
+  color: var(--harizuri-light);
+}
+.schedule table.timetable thead tr {
+  background-color: var(--cherry-dark);
+  color: var(--harizuri);
+}
+.schedule table.timetable tbody tr.now {
+  background-color: var(--harizuri-light);
+  color: var(--cherry-dark);
+}
+.resources .present details .item {
+  border-top: 0.2em solid var(--harizuri);
+}
+a.ref {
+  background-color: var(--harizuri);
+  color: var(--cherry-light);
+}
+.resources .present details summary {
+  color: var(--harizuri);
+  text-decoration: underline dotted var(--cherry-dark) 0.25em;
+}
+.resources .present details {
+  background: var(--cherry-light);
+  border: 1px solid var(--cherry-dark);
+}
+
+.resources .present details summary::after {
+  color: var(--harizuri-light);
+}
+
+.sponsor .name {
+  color: var(--harizuri);
+}
+
+.sponsor.flowItem {
+  width: 36%;
+}
+.sponsor.DLL .name {
+  color: var(--dll-blue);
+}
+.sponsor.SCJ .name {
+  color: var(--scj-red);
+}
+.sponsor.KIITA .name {
+  color: var(--kiita-grape);
+}
+.sponsor.Ziphil .name {
+  color: var(--ziphil-black);
+}
+.sponsor.Yuri .name {
+  color: var(--yuri-skyblue);
+}
+.sponsor .desc {
+  color: var(--harizuri);
+}
+.sponsor a {
+  color: var(--harizuri);
+}
+.sponsor.DLL a {
+  color: var(--dll-blue);
+}
+.sponsor.SCJ a {
+  color: var(--scj-red);
+}
+.sponsor.KIITA a {
+  color: var(--kiita-grape);
+}
+.sponsor.Ziphil a {
+  color: var(--ziphil-black);
+}
+.sponsor.Yuri a {
+  color: var(--yuri-skyblue);
+}
+a.regisFormLink {
+  color: var(--harizuri);
+}
+.sponsor.DLL img {
+  height: 1.2em;
+  display: inline;
+  transform: translate(0.25em,0.3em);
+}
+@media screen and (max-width: 599px) {
+  a.regisFormLink {
+    color: var(--harizuri);
+  }
+}
