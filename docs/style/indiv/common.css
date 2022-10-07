@@ -35,6 +35,76 @@ body {
 .abstract .scheduleAbst ul {
   margin: 0;
 }
+.abstract .programme {
+  --number: 55;
+  --guess01: calc((var(--number) + (var(--number) / var(--number))) / 2);
+  --guess02: calc((var(--guess01) + (var(--number) / var(--guess01))) / 2);
+  --guess03: calc((var(--guess02) + (var(--number) / var(--guess02))) / 2);
+  --guess04: calc((var(--guess03) + (var(--number) / var(--guess03))) / 2);
+  --guess05: calc((var(--guess04) + (var(--number) / var(--guess04))) / 2);
+  --guess06: calc((var(--guess05) + (var(--number) / var(--guess05))) / 2);
+  --guess07: calc((var(--guess06) + (var(--number) / var(--guess06))) / 2);
+  --guess08: calc((var(--guess07) + (var(--number) / var(--guess07))) / 2);
+  --guess09: calc((var(--guess08) + (var(--number) / var(--guess08))) / 2);
+  --guess10: calc((var(--guess09) + (var(--number) / var(--guess09))) / 2);
+  text-align: left;
+  font-size: 1.25em;
+  width: calc(85% - var(--guess10) * 1%);
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+}
+.abstract .programme{
+  font-size: 1.1em;
+}
+.abstract .programme .subHeading{
+  font-size: 1.3em;
+  text-align: center;
+}
+.abstract .programme .programmeAbst ul {
+  margin: 0 2em;
+}
+.abstract .programme .programmeDesc{
+  margin: 0 1em;
+}
+.abstract .programme dl{
+  margin: 0 0.5em;
+}
+.abstract .programme dt {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1.3em;
+  padding-left: 0;
+  float: left;
+}
+.abstract .programme dd{
+  margin-left: 1em;
+}
+.join .regisForms {
+  --number: 55;
+  --guess01: calc((var(--number) + (var(--number) / var(--number))) / 2);
+  --guess02: calc((var(--guess01) + (var(--number) / var(--guess01))) / 2);
+  --guess03: calc((var(--guess02) + (var(--number) / var(--guess02))) / 2);
+  --guess04: calc((var(--guess03) + (var(--number) / var(--guess03))) / 2);
+  --guess05: calc((var(--guess04) + (var(--number) / var(--guess04))) / 2);
+  --guess06: calc((var(--guess05) + (var(--number) / var(--guess05))) / 2);
+  --guess07: calc((var(--guess06) + (var(--number) / var(--guess06))) / 2);
+  --guess08: calc((var(--guess07) + (var(--number) / var(--guess07))) / 2);
+  --guess09: calc((var(--guess08) + (var(--number) / var(--guess08))) / 2);
+  --guess10: calc((var(--guess09) + (var(--number) / var(--guess09))) / 2);
+  text-align: left;
+  font-size: 1.25em;
+  width: calc(85% - var(--guess10) * 1%);
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+}
+.join .regisForms ul {
+  margin: 0;
+}
 .broadcast .embedYouTube {
   margin: auto;
   margin-top: 0.5em;
@@ -84,6 +154,11 @@ body {
 .schedule table.timetable tr.rest {
   background-color: gray;
   color: white;
+}
+.schedule table.timetable tr.awards {
+  background-color: #f0c537;
+  color: #5918ad;
+  font-weight: bold;
 }
 .schedule table.timetable thead tr {
   height: 1.5em;

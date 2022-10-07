@@ -25,6 +25,10 @@ body {
   color: var(--harizuri);
   text-decoration: underline dotted var(--cherry-dark) 0.25em;
 }
+.abstract .programme dt {
+  color: var(--harizuri);
+  text-decoration: underline dotted var(--cherry-dark) 0.25em;
+}
 .headerImg {
   background: var(--cherry-grad);
   padding-bottom: calc(10 * var(--bases));
@@ -60,6 +64,9 @@ body {
 */
 
 .abstract .scheduleAbst {
+  border: 1px solid var(--cherry-dark);
+}
+.abstract .programme{
   border: 1px solid var(--cherry-dark);
 }
 /*
