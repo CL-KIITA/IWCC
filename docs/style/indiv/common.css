@@ -196,6 +196,7 @@ body {
   width: 1.5em;
   writing-mode: vertical-lr;
 }
+.schedule table.timetable.timeFree tr.yet td:nth-child(2),
 .schedule table.timetable tr.yet td:nth-child(3),
 .schedule table.timetable tr.yet td:nth-child(4),
 .schedule table.timetable tr.yet td:nth-child(5),
