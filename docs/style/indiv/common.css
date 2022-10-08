@@ -152,8 +152,8 @@ body {
   height: 2em;
 }
 .schedule table.timetable tr.rest {
-  background-color: var(--rest-bg-color);
-  color: var(--rest-fg-color);
+  background-color: #666557;
+  color: white;
 }
 .schedule table.timetable tr.awards {
   background-color: #f0c537;
@@ -201,8 +201,8 @@ body {
 .schedule table.timetable tr.yet td:nth-child(5),
 .schedule table.timetable tr.yet td:nth-child(6),
 .schedule table.timetable tr.yet td:nth-child(7) {
-  background-color: var(--yet-bg-color);
-  color: var(--yet-fg-color);
+  background-color: #d8d4b7;
+  color: darkgray;
   content: "未定枠";
 }
 .schedule table.timetable td {
