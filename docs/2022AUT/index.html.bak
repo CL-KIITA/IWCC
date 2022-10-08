@@ -61,8 +61,8 @@
     <div class="contentContainer">
       <div class="blank"></div>
       <div class="content abstract">
-        <img src="./../assets/logo/momiji_iwcc_or.svg" class="momiji_f2" />
-        <img src="./../assets/logo/momiji_iwcc_rd.svg" class="momiji_f1" />
+        <img src="./../assets/logo/momiji_iwcc_framed.svg" class="momiji_f1" />
+        <img src="./../assets/logo/momiji_iwcc_framed.svg" class="momiji_f2" />
         <span class="heading">概要 | Abstract</span><br /><br />
         <div class="title">第三回 秋季 想像世界創作会議 ～HISTORY～</div>
 
@@ -71,7 +71,7 @@
           を作っている或いは支えている神々が一堂に会して "素晴らしさ"
           や今後の発展を語り合う。<br />
           　そんな創造神たちの戯れにようこそ。
-          <img src="./../assets/logo/momiji_iwcc_yl.svg" class="momiji_b1" />
+          <img src="./../assets/logo/momiji_iwcc.svg" class="momiji_b1" />
         </div>
         <div class="scheduleAbst">
           <ul>
@@ -148,7 +148,7 @@
         </div>
       </div>
       <div class="content join">
-        <img src="./../assets/logo/momiji_iwcc_rd.svg" class="momiji_b2" />
+        <img src="./../assets/logo/momiji_iwcc.svg" class="momiji_b2" />
         <span class="heading">参加する | Join</span><br /><br />
         <p class="normalText">
           　入力フォームがあるので参加・応募したい方は入力をお願いします。<br />
@@ -181,7 +181,7 @@
           </ul>
         </div>
         <br /><br />
-        <img src="./../assets/logo/momiji_iwcc_yl.svg" class="momiji_f3" />
+        <img src="./../assets/logo/momiji_iwcc_framed.svg" class="momiji_f3" />
       </div>
       <div class="content schedule">
         <span class="heading">タイムテーブル | Time Table</span><br />
@@ -334,7 +334,7 @@
         </div>
       </div>
       <div class="content broadcast">
-        <img src="./../assets/logo/momiji_iwcc_or.svg" class="momiji_b3" />
+        <img src="./../assets/logo/momiji_iwcc.svg" class="momiji_b3" />
         <span class="heading">配信 | Broadcast</span><br /><br />
         <p class="normalText">
           　想像世界創作会議は、DLLにて行われているイベントに直接参加するほか、以下の<span
@@ -362,7 +362,7 @@
         </div>
       </div>
       <div class="content resources">
-        <img src="./../assets/logo/momiji_iwcc_rd.svg" class="momiji_f4" />
+        <img src="./../assets/logo/momiji_iwcc_framed.svg" class="momiji_f4" />
         <span class="heading">発表資料 | Resources</span><br />
         <span class="subHeading" id="presentations"
           >登壇発表 | Presentations</span
@@ -374,7 +374,7 @@
       </div>
       <div class="content sponsors">
         <span class="heading">提供 | Sponsors</span><br /><br />
-        <img src="./../assets/logo/momiji_iwcc_yl.svg" class="momiji_f5" />
+        <img src="./../assets/logo/momiji_iwcc_framed.svg" class="momiji_f5" />
         <div class="sponsor DLL">
           <span class="name">
             <a href="https://discord.gg/KgmXaV3erS">

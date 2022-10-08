@@ -110,6 +110,16 @@ a.ref {
 .resources .present details summary::after {
   color: var(--harizuri-light);
 }
+}
+.schedule table.timetable tr.yet td:nth-child(3),
+.schedule table.timetable tr.yet td:nth-child(4),
+.schedule table.timetable tr.yet td:nth-child(5),
+.schedule table.timetable tr.yet td:nth-child(6),
+.schedule table.timetable tr.yet td:nth-child(7) {
+  background-color: #ffffff !important;
+  color: darkgray !important;
+  content: "未定枠";
+}
 
 
 img.momiji_f1{
@@ -120,7 +130,7 @@ img.momiji_f1{
 img.momiji_f2{
   width: 20vw;
   position: absolute;
-  transform: scale(-1) translate(39vw, 2vw) rotate(-63deg);
+  transform: scale(-1) translate(41vw, 2vw) rotate(-63deg);
 }
 img.momiji_f3{
   width: 20vw;
@@ -140,7 +150,7 @@ img.momiji_f5 {
 img.momiji_b1{
   width: 20vw;
   position: absolute;
-  transform: translate(23vw, 2vw) rotate(-33deg);
+  transform: translate(30vw, 2vw) rotate(-13deg);
 }
 img.momiji_b2{
   width: 20vw;
