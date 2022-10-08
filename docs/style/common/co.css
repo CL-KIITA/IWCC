@@ -102,7 +102,7 @@
   font-weight: bold;
 }
 .WrapperDisabledA {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
 }
 a.ComingSoon {
   color: gray;
