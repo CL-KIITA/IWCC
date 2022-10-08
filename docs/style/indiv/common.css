@@ -117,7 +117,7 @@ body {
 }
 .broadcast .embedYouTube.ComingSoon {
   border: 0.05em solid black;
-  background-color: lightgray;
+  background-color: var(--yet-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
