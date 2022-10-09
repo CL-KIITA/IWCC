@@ -114,7 +114,10 @@ a.ref {
   color: var(--harizuri-light);
 }
 
-
+p.imageR{
+  text-align: right;
+  height: 0.001em;
+}
 img.momiji_f1{
   width: 15vw;
   position: absolute;
@@ -130,25 +133,28 @@ img.momiji_f3{
   position: absolute;
   transform: translate(-49vw, -7vw) rotate(43deg);
 }
+/* R Res. */
 img.momiji_f4{
-  width: 19vw;
+  width: 18vw;
   position: absolute;
-  transform: scale(-1) translate(-36vw, 9vw) rotate(43deg);
+  transform: scale(-1) translate(11.5vw, 9vw) rotate(43deg);
 }
 img.momiji_f5 {
   width: 19vw;
   position: absolute;
   transform: scale(-1) translate(38vw, 17vw) rotate(-43deg);
 }
+/* R Lead */
 img.momiji_b1{
   width: 20vw;
   position: absolute;
-  transform: translate(30vw, 2vw) rotate(-13deg);
+  transform: translate(-3.5vw, 2vw) rotate(-13deg);
 }
+/* R Join */
 img.momiji_b2{
-  width: 20vw;
+  width: 19vw;
   position: absolute;
-  transform: scale(-1) translate(-30vw, 0vw) rotate(-43deg);
+  transform: scale(-1) translate(11.5vw, -2vw) rotate(-43deg);
 }
 img.momiji_b3{
   width: 17vw;
