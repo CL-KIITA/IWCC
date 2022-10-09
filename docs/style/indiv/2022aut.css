@@ -113,7 +113,10 @@ a.ref {
 .resources .present details summary::after {
   color: var(--harizuri-light);
 }
-
+.content>.heading,
+.content> :not([class^="image"], [class^="momiji"])>* {
+  position: relative;
+}
 p.imageR{
   text-align: right;
   height: 0.001em;
