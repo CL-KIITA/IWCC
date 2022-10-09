@@ -69,6 +69,9 @@ body {
 .abstract .programme{
   border: 1px solid var(--fallen-leaves-dark);
 }
+.desc{
+  text-indent: 1em;
+}
 /*
 .abstract .scheduleAbst ul {
   border: 1px solid var(--fallen-leaves-dark);
@@ -145,7 +148,7 @@ img.momiji_b1{
 img.momiji_b2{
   width: 20vw;
   position: absolute;
-  transform: scale(-1) translate(-28vw, 2vw) rotate(-43deg);
+  transform: scale(-1) translate(-30vw, 0vw) rotate(-43deg);
 }
 img.momiji_b3{
   width: 17vw;

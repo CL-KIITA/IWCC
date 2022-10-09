@@ -108,11 +108,19 @@ a.ComingSoon {
   color: gray;
   pointer-events: none;
 }
-p.normalText{
+article.normalText{
   width: 80%;
   margin: 0 auto;
   padding: 0.5em 1em;
   text-align: left;
+}
+.schedule article.normalText{
+  margin: 1em auto;
+}
+article.normalText > p.textBlock{
+  text-indent: 1em;
+  padding:0;
+  margin: 0;
 }
 .mainArticle {
   --number: 55;

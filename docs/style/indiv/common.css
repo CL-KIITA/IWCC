@@ -62,25 +62,29 @@ body {
   font-size: 1.3em;
   text-align: center;
 }
-.abstract .programme .programmeAbst ul {
+.abstract .programme .abst{
+  margin: 1em auto;
+}
+.abstract .programme .abst ul {
   margin: 0 2em;
 }
-.abstract .programme .programmeDesc{
+.abstract .programme .desc{
   margin: 0 1em;
 }
 .abstract .programme dl{
-  margin: 0 0.5em;
+  margin: 0;
 }
 .abstract .programme dt {
   font-size: 1.1em;
   font-weight: bold;
   padding: 0;
+  margin-left: -1em;
   line-height: 1.3em;
-  padding-left: 0;
   float: left;
 }
-.abstract .programme dd{
-  margin-left: 1em;
+.abstract .programme dd {
+  text-indent: 1em;
+  margin-left: 0.5em;
 }
 .join .regisForms {
   --number: 55;
@@ -316,7 +320,7 @@ a.ref {
 }
 .sponsor {
   width: 70%;
-  margin: auto;
+  margin: 2.25em auto;
 }
 .sponsor .name {
   font-size: 300%;
