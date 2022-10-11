@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--fallen-leaves-light);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "TPGothic-GT01", sans-serif;
 }
 .contentContainer .content {
   border: 0.1em solid var(--fallen-leaves-dark);
@@ -82,9 +82,8 @@ body {
   border-color: var(--fertile-soil);
 }
 .schedule table.timetable tr {
-  font-family: "TPGothic-GT01";
   background-color: var(--fallen-leaves-light);
-  color: var(--harizuri-light);
+  color: var(--fertile-soil-light);
 }
 .schedule table.timetable thead tr {
   background-color: var(--fallen-leaves-dark);
@@ -111,7 +110,7 @@ a.ref {
 }
 
 .resources .present details summary::after {
-  color: var(--harizuri-light);
+  color: var(--fertile-soil-light);
 }
 .content>.heading,
 .content> :not([class^="image"], [class^="momiji"])>* {
@@ -187,10 +186,10 @@ img.momiji_b3{
   color: var(--yuri-skyblue);
 }
 .sponsor .desc {
-  color: var(--harizuri);
+  color: var(--fertile-soil);
 }
 .sponsor a {
-  color: var(--harizuri);
+  color: var(--fertile-soil);
 }
 .sponsor.DLL a {
   color: var(--dll-blue);
@@ -208,7 +207,7 @@ img.momiji_b3{
   color: var(--yuri-blue);
 }
 a.regisFormLink {
-  color: var(--harizuri);
+  color: var(--fertile-soil);
 }
 .sponsor.DLL img {
   height: 1.2em;
@@ -217,6 +216,6 @@ a.regisFormLink {
 }
 @media screen and (max-width: 599px) {
   a.regisFormLink {
-    color: var(--harizuri);
+    color: var(--fertile-soil);
   }
 }
