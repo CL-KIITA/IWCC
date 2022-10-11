@@ -20,3 +20,12 @@
   margin: 0;
   font-size: 1.1em;
 }
+.sample .text .name{
+  font-size: 1.03em;
+  font-style: black;
+}
+.sample .text .desc{
+  font-size: 0.97em;
+  color: gray;
+  font-style: oblique;
+}
