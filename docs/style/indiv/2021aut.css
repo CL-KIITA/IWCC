@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--milk-fallen-leaf);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "TPGothic-GT01", sans-serif;
 }
 .contentContainer .content {
   border: 0.1em solid var(--fallen-leaf);
@@ -57,7 +57,6 @@ body {
   border-color: var(--potato);
 }
 .schedule table.timetable tr {
-  font-family: "TPGothic-GT01";
   background-color: var(--milk-fallen-leaf-light);
   color: var(--potato-light);
 }

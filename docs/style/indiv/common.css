@@ -348,9 +348,6 @@ a.ref {
 .sub {
   font-size: 0.5em;
 }
-a.regisFormLink {
-  text-decoration: none;
-}
 @media screen and (max-width: 599px) {
   a.regisFormLink {
     line-height: 2.2em;
