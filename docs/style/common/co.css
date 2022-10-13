@@ -102,11 +102,25 @@
   font-weight: bold;
 }
 .WrapperDisabledA {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
 }
 a.ComingSoon {
   color: gray;
   pointer-events: none;
+}
+article.normalText{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+.schedule article.normalText{
+  margin: 1em auto;
+}
+article.normalText > p.textBlock{
+  text-indent: 1em;
+  padding:0;
+  margin: 0;
 }
 .mainArticle {
   --number: 55;
@@ -127,4 +141,12 @@ a.ComingSoon {
   margin-top: 0em;
   margin-bottom: 0.5em;
   padding: 1em;
+}
+span.footnote::after{
+  vertical-align: super;
+  font-size: 0.6em;
+  content: "※" attr(alt);
+}
+div.footnotes{
+  font-size: 0.9em;
 }

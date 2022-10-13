@@ -1,0 +1,23 @@
+/* Theme of the 2021 aut */
+:root {
+  --fallen-leaves: #d4bf5d;
+  --fallen-leaves-dark: #ccb340;
+  --fallen-leaves-light: #fffbdb;
+  --fallen-leaves-middle: #e8ddaa;
+  --fallen-leaves-grad: linear-gradient(
+    180deg,
+    rgba(204, 179, 64, 1) 0%,
+    rgba(207, 183, 73, 1) 20%,
+    rgba(215, 195, 99, 1) 44%,
+    rgba(234, 221, 155, 1) 67%,
+    rgba(239, 228, 169, 1) 82%,
+    rgba(255, 251, 219, 1) 100%
+  );
+  --orange: #f39800;
+  --fertile-soil: #602600;
+  --fertile-soil-light: #985d00;
+  --yet-bg-color: #d8d4b7;
+  --yet-fg-color: darkgray;
+  --rest-bg-color: #666557;
+  --rest-fg-color: white;
+}

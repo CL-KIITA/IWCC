@@ -1,0 +1,31 @@
+.sampleGrid{
+  margin: 1.5em;
+  display: grid;
+  column-gap: 0.15em;
+  row-gap: 0.17em;
+  grid-template-columns: repeat(6, 1fr);
+}
+.sample{
+  padding: 0;
+  margin: 0;
+}
+.sample .box{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.sample .text{
+  padding: 0.05em;
+  margin: 0;
+  font-size: 1.1em;
+}
+.sample .text .name{
+  font-size: 1.03em;
+  font-style: black;
+}
+.sample .text .desc{
+  font-size: 0.97em;
+  color: gray;
+  font-style: oblique;
+}

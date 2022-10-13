@@ -7,6 +7,7 @@ body {
   padding: 0;
   z-index: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .abstract .title {
@@ -35,6 +36,80 @@ body {
 .abstract .scheduleAbst ul {
   margin: 0;
 }
+.abstract .programme {
+  --number: 55;
+  --guess01: calc((var(--number) + (var(--number) / var(--number))) / 2);
+  --guess02: calc((var(--guess01) + (var(--number) / var(--guess01))) / 2);
+  --guess03: calc((var(--guess02) + (var(--number) / var(--guess02))) / 2);
+  --guess04: calc((var(--guess03) + (var(--number) / var(--guess03))) / 2);
+  --guess05: calc((var(--guess04) + (var(--number) / var(--guess04))) / 2);
+  --guess06: calc((var(--guess05) + (var(--number) / var(--guess05))) / 2);
+  --guess07: calc((var(--guess06) + (var(--number) / var(--guess06))) / 2);
+  --guess08: calc((var(--guess07) + (var(--number) / var(--guess07))) / 2);
+  --guess09: calc((var(--guess08) + (var(--number) / var(--guess08))) / 2);
+  --guess10: calc((var(--guess09) + (var(--number) / var(--guess09))) / 2);
+  text-align: left;
+  font-size: 1.25em;
+  width: calc(85% - var(--guess10) * 1%);
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+}
+.abstract .programme{
+  font-size: 1.1em;
+}
+.abstract .programme .subHeading{
+  font-size: 1.3em;
+  text-align: center;
+}
+.abstract .programme .abst{
+  margin: 1em auto;
+}
+.abstract .programme .abst ul {
+  margin: 0 2em;
+}
+.abstract .programme .desc{
+  margin: 0 1em;
+}
+.abstract .programme dl{
+  margin: 0;
+}
+.abstract .programme dt {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0;
+  margin-left: -1em;
+  line-height: 1.3em;
+  float: left;
+}
+.abstract .programme dd {
+  text-indent: 1em;
+  margin-left: 0.5em;
+}
+.join .regisForms {
+  --number: 55;
+  --guess01: calc((var(--number) + (var(--number) / var(--number))) / 2);
+  --guess02: calc((var(--guess01) + (var(--number) / var(--guess01))) / 2);
+  --guess03: calc((var(--guess02) + (var(--number) / var(--guess02))) / 2);
+  --guess04: calc((var(--guess03) + (var(--number) / var(--guess03))) / 2);
+  --guess05: calc((var(--guess04) + (var(--number) / var(--guess04))) / 2);
+  --guess06: calc((var(--guess05) + (var(--number) / var(--guess05))) / 2);
+  --guess07: calc((var(--guess06) + (var(--number) / var(--guess06))) / 2);
+  --guess08: calc((var(--guess07) + (var(--number) / var(--guess07))) / 2);
+  --guess09: calc((var(--guess08) + (var(--number) / var(--guess08))) / 2);
+  --guess10: calc((var(--guess09) + (var(--number) / var(--guess09))) / 2);
+  text-align: left;
+  font-size: 1.25em;
+  width: calc(85% - var(--guess10) * 1%);
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+}
+.join .regisForms ul {
+  margin: 0;
+}
 .broadcast .embedYouTube {
   margin: auto;
   margin-top: 0.5em;
@@ -47,7 +122,7 @@ body {
 }
 .broadcast .embedYouTube.ComingSoon {
   border: 0.05em solid black;
-  background-color: lightgray;
+  background-color: var(--yet-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,8 +157,13 @@ body {
   height: 2em;
 }
 .schedule table.timetable tr.rest {
-  background-color: gray;
-  color: white;
+  background-color: var(--rest-bg-color);
+  color: var(--rest-fg-color);
+}
+.schedule table.timetable tr.awards {
+  background-color: #f0c537;
+  color: #5918ad;
+  font-weight: bold;
 }
 .schedule table.timetable thead tr {
   height: 1.5em;
@@ -121,13 +201,14 @@ body {
   width: 1.5em;
   writing-mode: vertical-lr;
 }
+.schedule table.timetable.timeFree tr.yet td:nth-child(2),
 .schedule table.timetable tr.yet td:nth-child(3),
 .schedule table.timetable tr.yet td:nth-child(4),
 .schedule table.timetable tr.yet td:nth-child(5),
 .schedule table.timetable tr.yet td:nth-child(6),
 .schedule table.timetable tr.yet td:nth-child(7) {
-  background-color: lightgray;
-  color: darkgray;
+  background-color: var(--yet-bg-color);
+  color: var(--yet-fg-color);
   content: "未定枠";
 }
 .schedule table.timetable td {
@@ -240,7 +321,7 @@ a.ref {
 }
 .sponsor {
   width: 70%;
-  margin: auto;
+  margin: 2.25em auto;
 }
 .sponsor .name {
   font-size: 300%;
@@ -266,9 +347,6 @@ a.ref {
 }
 .sub {
   font-size: 0.5em;
-}
-a.regisFormLink {
-  text-decoration: none;
 }
 @media screen and (max-width: 599px) {
   a.regisFormLink {

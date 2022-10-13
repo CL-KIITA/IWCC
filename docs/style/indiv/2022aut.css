@@ -1,0 +1,221 @@
+/* Common Style */
+@import url(./../common/main.css);
+
+/* Individuals Style */
+@import url(./common.css);
+
+/* Theme of the 2021 aut */
+@import url(./theme.2022aut.css);
+
+/* Tag Style */
+@import url(./../common/tag.css);
+
+body {
+  background-color: var(--fallen-leaves-light);
+  font-family: "Montserrat", "TPGothic-GT01", sans-serif;
+}
+.contentContainer .content {
+  border: 0.1em solid var(--fallen-leaves-dark);
+}
+.heading {
+  color: var(--fertile-soil);
+  text-decoration: underline dotted var(--orange) 0.25em;
+}
+.subHeading {
+  color: var(--fertile-soil);
+  text-decoration: underline dotted var(--orange) 0.25em;
+}
+.abstract .programme dt {
+  color: var(--fertile-soil);
+  text-decoration: underline dotted var(--orange) 0.25em;
+}
+.headerImg {
+  background: var(--fallen-leaves-grad);
+  padding-bottom: calc(10 * var(--orange));
+  z-index: 40;
+}
+.headerImg img {
+  transform: translateY(calc(-10 * var(--bases)));
+  clip-path: inset(calc(10 * var(--bases)) 0 0 0);
+
+  z-index: 40;
+}
+.nowLoading::before {
+  color: var(--fertile-soil);
+}
+.nowLoading::after {
+  color: var(--fertile-soil);
+}
+.headNavigateWrap {
+  background-color: var(--fallen-leaves-dark);
+}
+.headNavigate {
+  color: var(--fallen-leaves-middle);
+  border-bottom: 0.17em solid var(--fallen-leaves);
+  z-index: 60;
+}
+.headNavigate a {
+  color: var(--fallen-leaves-light);
+}
+/*
+.mainArticle {
+  border: 1px solid var(--fallen-leaves-dark);
+}
+*/
+
+.abstract .scheduleAbst {
+  border: 1px solid var(--fallen-leaves-dark);
+}
+.abstract .programme{
+  border: 1px solid var(--fallen-leaves-dark);
+}
+.desc{
+  text-indent: 1em;
+}
+/*
+.abstract .scheduleAbst ul {
+  border: 1px solid var(--fallen-leaves-dark);
+}
+*/
+
+.schedule table.timetable {
+  border-color: var(--fertile-soil);
+}
+.schedule table.timetable tr {
+  background-color: var(--fallen-leaves-light);
+  color: var(--fertile-soil-light);
+}
+.schedule table.timetable thead tr {
+  background-color: var(--fallen-leaves-dark);
+  color: var(--fertile-soil);
+}
+.schedule table.timetable tbody tr.now {
+  background-color: var(--fallen-leaves-light);
+  color: var(--fallen-leaves-dark);
+}
+.resources .present details .item {
+  border-top: 0.2em solid var(--fertile-soil);
+}
+a.ref {
+  background-color: var(--fertile-soil);
+  color: var(--fallen-leaves-light);
+}
+.resources .present details summary {
+  color: var(--fertile-soil);
+  text-decoration: underline dotted var(--fallen-leaves-dark) 0.25em;
+}
+.resources .present details {
+  background: var(--fallen-leaves-light);
+  border: 1px solid var(--fallen-leaves-dark);
+}
+
+.resources .present details summary::after {
+  color: var(--fertile-soil-light);
+}
+.content>.heading,
+.content> :not([class^="image"], [class^="momiji"])>* {
+  position: relative;
+}
+p.imageR{
+  text-align: right;
+  height: 0.001em;
+}
+img.momiji_f1{
+  width: 15vw;
+  position: absolute;
+  transform: scale(-1) translate(35vw, 10vw) rotate(15deg);
+}
+img.momiji_f2{
+  width: 20vw;
+  position: absolute;
+  transform: scale(-1) translate(41vw, 2vw) rotate(-63deg);
+}
+img.momiji_f3{
+  width: 20vw;
+  position: absolute;
+  transform: translate(-49vw, -7vw) rotate(43deg);
+}
+/* R Res. */
+img.momiji_f4{
+  width: 18vw;
+  position: absolute;
+  transform: scale(-1) translate(11.5vw, 9vw) rotate(43deg);
+}
+img.momiji_f5 {
+  width: 19vw;
+  position: absolute;
+  transform: scale(-1) translate(38vw, 17vw) rotate(-43deg);
+}
+/* R Lead */
+img.momiji_b1{
+  width: 20vw;
+  position: absolute;
+  transform: translate(-3.5vw, 2vw) rotate(-13deg);
+}
+/* R Join */
+img.momiji_b2{
+  width: 19vw;
+  position: absolute;
+  transform: scale(-1) translate(11.5vw, -2vw) rotate(-43deg);
+}
+img.momiji_b3{
+  width: 17vw;
+  position: absolute;
+  transform: scale(-1) translate(35vw, 7vw) rotate(-43deg);
+}
+.sponsor .name {
+  color: var(--fertile-soil);
+}
+
+.sponsor.flowItem {
+  width: 36%;
+}
+.sponsor.DLL .name {
+  color: var(--dll-blue);
+}
+.sponsor.SCJ .name {
+  color: var(--scj-red);
+}
+.sponsor.KIITA .name {
+  color: var(--kiita-grape);
+}
+.sponsor.Ziphil .name {
+  color: var(--ziphil-black);
+}
+.sponsor.Yuri .name {
+  color: var(--yuri-skyblue);
+}
+.sponsor .desc {
+  color: var(--fertile-soil);
+}
+.sponsor a {
+  color: var(--fertile-soil);
+}
+.sponsor.DLL a {
+  color: var(--dll-blue);
+}
+.sponsor.SCJ a {
+  color: var(--scj-red);
+}
+.sponsor.KIITA a {
+  color: var(--kiita-grape);
+}
+.sponsor.Ziphil a {
+  color: var(--ziphil-black);
+}
+.sponsor.Yuri a {
+  color: var(--yuri-blue);
+}
+a.regisFormLink {
+  color: var(--fertile-soil);
+}
+.sponsor.DLL img {
+  height: 1.2em;
+  display: inline;
+  transform: translate(0.25em,0.3em);
+}
+@media screen and (max-width: 599px) {
+  a.regisFormLink {
+    color: var(--fertile-soil);
+  }
+}
