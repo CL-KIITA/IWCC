@@ -85,6 +85,11 @@ body {
   background-color: var(--fallen-leaves-light);
   color: var(--fertile-soil-light);
 }
+.schedule table.timetable tr.awards {
+  background-color: var(--gold);
+  color: var(--purple);
+  font-weight: bold;
+}
 .schedule table.timetable thead tr {
   background-color: var(--fallen-leaves-dark);
   color: var(--fertile-soil);
