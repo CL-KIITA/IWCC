@@ -125,7 +125,7 @@ a.ref {
   color: var(--ziphil-black);
 }
 .sponsor.Yuri .name {
-  color: var(--yuri-skyblue);
+  color: var(--yuri-blue);
 }
 .sponsor .desc {
   color: var(--sea-dark);
@@ -143,7 +143,7 @@ a.ref {
   color: var(--ziphil-black);
 }
 .sponsor.Yuri a {
-  color: var(--yuri-skyblue);
+  color: var(--yuri-blue);
 }
 a.regisFormLink {
   color: var(--sea-dark);
