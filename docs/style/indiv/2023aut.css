@@ -115,8 +115,8 @@ a.ref {
 .sponsor.flowItem {
   width: 36%;
 }
-.sponsor.SCJ .name {
-  color: var(--scj-red);
+.sponsor.Elysion .name {
+  color: var(--elysion-blue);
 }
 .sponsor.KIITA .name {
   color: var(--kiita-grape);
@@ -133,8 +133,8 @@ a.ref {
 .sponsor a {
   color: var(--sea-dark);
 }
-.sponsor.SCJ a {
-  color: var(--scj-red);
+.sponsor.Elysion a {
+  color: var(--elysion-blue);
 }
 .sponsor.KIITA a {
   color: var(--kiita-grape);
