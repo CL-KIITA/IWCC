@@ -1,0 +1,25 @@
+/* Theme of the 2022 spr */
+:root {
+  --seiryu: #A5D2FF;
+  --seiryu-dark: #3399ff;
+  --seiryu-light: #D8EBFF;
+  --seiryu-middle: #81c0ff;
+  --seiryu-grad: linear-gradient(
+    180deg,
+    rgba(51, 153, 255, 1) 0%,
+    rgba(89, 172, 255, 1) 41%,
+    rgba(127, 191, 255, 1) 59%,
+    rgba(178, 216, 255, 1) 69%,
+    rgba(216, 235, 255, 1) 84%
+  );
+  --sea-dark: #0b4279;
+  --sea: #00508d;
+  --sea-light: #99CCFF;
+  --lavender: #4f4f91;
+  --gold: #f0c537;
+  
+  --yet-bg-color: lightgray;
+  --yet-fg-color: darkgray;
+  --rest-bg-color: gray;
+  --rest-fg-color: white;
+}
