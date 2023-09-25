@@ -160,11 +160,6 @@ body {
   background-color: var(--rest-bg-color);
   color: var(--rest-fg-color);
 }
-.schedule table.timetable tr.awards {
-  background-color: #f0c537;
-  color: #5918ad;
-  font-weight: bold;
-}
 .schedule table.timetable thead tr {
   height: 1.5em;
 }
