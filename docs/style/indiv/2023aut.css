@@ -11,8 +11,10 @@
 @import url(./../common/tag.css);
 
 body {
-  background-color: var(--seiryu-light);
   font-family: "Montserrat", "TPGothic-GT01", sans-serif;
+}
+.bodyContent {
+  background-image: var(--evening-grad);
 }
 .contentContainer .content {
   border: 0.1em solid var(--seiryu-dark);
@@ -58,6 +60,10 @@ body {
   border: 1px solid var(--seiryu-dark);
 }
 */
+
+.zenFont {
+  font-family: "Zen Kurenaido";
+}
 
 .abstract .scheduleAbst {
   border: 1px solid var(--seiryu-dark);
