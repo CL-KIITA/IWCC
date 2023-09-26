@@ -128,6 +128,26 @@ a.ref {
   transform: translate(81vw, -17vw);
   width: 14vw;
 }
+.cloud_3 {
+  transform: translate(5vw, 46vw);
+  width: 10vw;
+}
+.cloud_4 {
+  transform: translate(35vw, 15vw);
+  width: 20vw;
+}
+.cloud_5 {
+  transform: translate(27vw, 23vw);
+  width: 12vw;
+}
+.cloud_6 {
+  transform: translate(-36vw, -3vw);
+  width: 16vw;
+}
+.cloud_7 {
+  transform: translate(18vw, -14vw);
+  width: 26vw;
+}
 
 .sponsor .name {
   color: var(--sea-dark);

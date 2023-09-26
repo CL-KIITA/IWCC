@@ -3,8 +3,8 @@
 
 <svg
    width="79.375mm"
-   height="36.725883mm"
-   viewBox="0 0 79.375 36.725883"
+   height="43.342751mm"
+   viewBox="0 0 79.375 43.34275"
    version="1.1"
    id="svg5"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -15,10 +15,10 @@
     <linearGradient
        xlink:href="#linearGradient2122"
        id="linearGradient2124"
-       x1="35.362358"
-       y1="-0.29716268"
-       x2="35.362358"
-       y2="36.848171"
+       x1="37.356956"
+       y1="0.15247738"
+       x2="37.356956"
+       y2="43.761005"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient2122">
@@ -28,7 +28,7 @@
          id="stop2118" />
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0.71484953"
+         offset="0.7317726"
          id="stop2213" />
       <stop
          style="stop-color:#ffffff;stop-opacity:0.34674922;"
@@ -39,5 +39,5 @@
   <path
      id="path234"
      style="fill:url(#linearGradient2124);stroke-width:1.85208;stroke-linecap:round;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-     d="M 30.108757 0 A 22.89965 14.256155 0 0 0 7.2088623 14.255977 A 22.89965 14.256155 0 0 0 8.5049072 18.978687 A 17.145 9.5249991 0 0 0 0 27.200924 A 17.145 9.5249991 0 0 0 17.145207 36.725924 L 67.945207 36.725924 A 11.43 9.5249991 0 0 0 79.375 27.200924 A 11.43 9.5249991 0 0 0 71.486076 18.144629 A 15.39875 12.064999 0 0 0 72.166138 14.613062 A 15.39875 12.064999 0 0 0 56.767078 2.5481649 A 15.39875 12.064999 0 0 0 47.497359 4.9810913 A 22.89965 14.256155 0 0 0 30.108757 0 z " />
+     d="M 50.228975 0 A 13.55311 13.068797 0 0 0 37.97701 7.4889486 A 22.89965 14.256155 0 0 0 30.108757 6.6166504 A 22.89965 14.256155 0 0 0 7.2088623 20.872628 A 22.89965 14.256155 0 0 0 8.5049072 25.595337 A 17.145 9.5249991 0 0 0 0 33.817574 A 17.145 9.5249991 0 0 0 17.145207 43.342574 L 67.945207 43.342574 A 11.43 9.5249991 0 0 0 79.375 33.817574 A 11.43 9.5249991 0 0 0 71.486076 24.761279 A 15.39875 12.064999 0 0 0 72.166138 21.229712 A 15.39875 12.064999 0 0 0 63.494316 10.393681 A 13.55311 13.068797 0 0 0 50.228975 0 z " />
 </svg>
