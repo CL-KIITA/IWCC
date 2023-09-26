@@ -15,6 +15,8 @@ body {
 }
 .bodyContent {
   background-image: var(--evening-grad);
+
+  overflow: hidden;
 }
 .contentContainer .content {
   border: 0.1em solid var(--seiryu-dark);
@@ -112,6 +114,19 @@ a.ref {
 
 .resources .present details summary::after {
   color: var(--sea);
+}
+
+.clouds {
+  position: absolute;
+  opacity: 0.5;
+}
+.cloud_1 {
+  transform: translate(3vw, -26vw);
+  width: 14vw;
+}
+.cloud_2 {
+  transform: translate(81vw, -17vw);
+  width: 14vw;
 }
 
 .sponsor .name {
