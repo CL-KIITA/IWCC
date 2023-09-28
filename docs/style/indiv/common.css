@@ -152,6 +152,12 @@ body {
   border-collapse: collapse;
   opacity: 1;
   z-index: 10;
+  overflow-x: auto;
+}
+@media (max-width: var(--device-cutoff-w)) {
+  .schedule table.timetable {
+    overflow-x: scroll;
+  }
 }
 .schedule table.timetable tr {
   height: 2em;
@@ -197,11 +203,7 @@ body {
   writing-mode: vertical-lr;
 }
 .schedule table.timetable.timeFree tr.yet td:nth-child(2),
-.schedule table.timetable tr.yet td:nth-child(3),
-.schedule table.timetable tr.yet td:nth-child(4),
-.schedule table.timetable tr.yet td:nth-child(5),
-.schedule table.timetable tr.yet td:nth-child(6),
-.schedule table.timetable tr.yet td:nth-child(7) {
+.schedule table.timetable tr.yet td:nth-child(n+3) {
   background-color: var(--yet-bg-color);
   color: var(--yet-fg-color);
   content: "未定枠";

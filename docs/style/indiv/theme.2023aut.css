@@ -10,12 +10,13 @@
     rgba(89, 172, 255, 1) 25%,
     rgba(127, 191, 255, 1) 50%,
     rgba(178, 216, 255, 1) 75%,
-    rgba(216, 235, 255, 1) 100%
+    rgba(0, 0, 0, 0) 100%
   );
 
   --evening-grad: linear-gradient(
     180deg,
     #D8EBFF 0%,
+    #D8EBFF 10%,
     #f9e6ff 20%,
     #ffd699 100%
   );
@@ -30,4 +31,7 @@
   --yet-fg-color: darkgray;
   --rest-bg-color: gray;
   --rest-fg-color: white;
+
+  --thead-bg-color: #99CCFF;
+  --thead-fg-color: #0b4279;
 }
