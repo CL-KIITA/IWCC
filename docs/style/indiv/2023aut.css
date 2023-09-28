@@ -73,7 +73,26 @@ body {
   border: 1px solid var(--seiryu-dark);
 }
 */
-
+.schedule .scheduleContainer > div, .schedule .specialContainer > div {
+  border-color: var(--sea-dark);
+}
+.schedule .scheduleContainer > div {
+  background-color: var(--seiryu-light);
+  color: var(--sea);
+}
+.schedule .scheduleContainer {
+  border-color: var(--sea-dark);
+}
+.schedule .scheduleContainer .scheduleNumber {
+  background-color: var(--thead-bg-color);
+  color: var(--thead-fg-color);
+  font-weight: bold;
+}
+.schedule div.specialContainer.award {
+  background-color: var(--lavender);
+  color: var(--gold);
+  font-weight: bold;
+}
 .schedule table.timetable {
   border-color: var(--sea-dark);
 }
