@@ -146,6 +146,12 @@ body {
 }
 .schedule {
   padding: 0.7em !important;
+  overflow-x: auto;
+}
+@media (max-width: var(--device-cutoff-w)) {
+  .schedule div.timetable {
+    overflow-x: scroll;
+  }
 }
 .schedule table.timetable {
   width: 100%;
@@ -153,12 +159,6 @@ body {
   border-collapse: collapse;
   opacity: 1;
   z-index: 10;
-  overflow-x: auto;
-}
-@media (max-width: 850px) {
-  .schedule div.tableBody {
-    overflow-x: scroll;
-  }
 }
 .schedule table.timetable tr {
   height: 2em;
