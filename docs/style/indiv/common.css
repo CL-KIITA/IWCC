@@ -1,4 +1,5 @@
 /* Individuals Style */
+@import url(./../common/main.css);
 
 body {
   opacity: 1;
@@ -208,9 +209,96 @@ body {
   color: var(--yet-fg-color);
   content: "未定枠";
 }
+.schedule div.scheduleContainer.yet div:nth-child(n+3) {
+  background-color: var(--yet-bg-color);
+  color: var(--yet-fg-color);
+  content: "未定枠";
+}
 .schedule table.timetable td {
   padding: 0.5em;
 }
+
+.schedule .scheduleContainer, .schedule .indexContainer {
+  display: grid;
+  grid-template-columns: 2em 1fr 7em;
+  grid-template-rows: 3em 3em auto auto;
+  grid-template-areas: 
+    "num time  tag"
+    "num name  tag"
+    "num title level"
+    "num desc  desc";
+  margin: 0;
+}
+.schedule .scheduleContainer, .schedule .indexContainer, .schedule .specialContainer {
+  border-top: 3px solid;
+}
+.schedule .indexContainer > div, .schedule .scheduleContainer > div, .schedule .specialContainer > div {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+.schedule .scheduleNumber {
+  grid-area: num;
+  justify-content: center;
+}
+.schedule .schedulePerson {
+  grid-area: name;
+  justify-content: left;
+}
+.schedule .scheduleTime {
+  grid-area: time;
+  justify-content: left;
+}
+.schedule .scheduleTag {
+  grid-area: tag;
+  justify-content: center;
+}
+.schedule .scheduleLevel {
+  grid-area: level;
+  justify-content: center;
+}
+.schedule .scheduleTitle {
+  grid-area: title;
+  justify-content: left;
+  min-height: 2em;
+}
+.schedule .scheduleDesc {
+  grid-area: desc;
+  justify-content: left;
+  min-height: 2em;
+}
+
+.schedule .specialContainer {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  grid-template-rows: 3em auto;
+  grid-template-areas: 
+    "num time"
+    "num desc";
+}
+.schedule div.specialContainer.rest {
+  background-color: var(--rest-bg-color);
+  color: var(--rest-fg-color);
+}
+.schedule .specialContainer .number {
+  grid-area: num;
+  justify-content: center;
+}
+.schedule .specialContainer .time {
+  grid-area: time;
+  justify-content: left;
+}
+.schedule .specialContainer .desc {
+  grid-area: desc;
+  justify-content: left;
+  min-height: 2em;
+}
+
 .orgn {
   margin-top: 0.5em;
   font-weight: bold;

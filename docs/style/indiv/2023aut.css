@@ -73,7 +73,26 @@ body {
   border: 1px solid var(--seiryu-dark);
 }
 */
-
+.schedule .scheduleContainer > div, .schedule .specialContainer > div {
+  border-color: var(--sea-dark);
+}
+.schedule .scheduleContainer > div {
+  background-color: var(--seiryu-light);
+  color: var(--sea);
+}
+.schedule .scheduleContainer, .schedule .indexContainer, .schedule .specialContainer {
+  border-color: var(--sea-dark);
+}
+.schedule .scheduleContainer .scheduleNumber, .schedule .indexContainer div {
+  background-color: var(--sea-light);
+  color: var(--sea-dark);
+  font-weight: bold;
+}
+.schedule div.specialContainer.award {
+  background-color: var(--lavender);
+  color: var(--gold);
+  font-weight: bold;
+}
 .schedule table.timetable {
   border-color: var(--sea-dark);
 }
@@ -87,8 +106,8 @@ body {
   font-weight: bold;
 }
 .schedule table.timetable thead tr {
-  background-color: var(--thead-bg-color);
-  color: var(--thead-fg-color);
+  background-color: var(--sea-light);
+  color: var(--sea-dark);
 }
 .schedule table.timetable tbody tr.now {
   background-color: var(--sea);
