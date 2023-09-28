@@ -218,7 +218,7 @@ body {
   padding: 0.5em;
 }
 
-.schedule .scheduleContainer {
+.schedule .scheduleContainer, .schedule .indexContainer {
   display: grid;
   grid-template-columns: 2em 1fr 7em;
   grid-template-rows: 3em 3em auto auto;
@@ -227,9 +227,12 @@ body {
     "num name  tag"
     "num title level"
     "num desc  desc";
-  margin: 0.5em 0;
+  margin: 0;
 }
-.schedule .scheduleContainer > div, .schedule .specialContainer > div {
+.schedule .scheduleContainer, .schedule .indexContainer, .schedule .specialContainer {
+  border-top: 3px solid;
+}
+.schedule .indexContainer > div, .schedule .scheduleContainer > div, .schedule .specialContainer > div {
     border-width: 1px;
     border-style: solid;
     padding: 0.5em;
@@ -277,7 +280,6 @@ body {
   grid-template-areas: 
     "num time"
     "num desc";
-  margin: 0.5em 0;
 }
 .schedule div.specialContainer.rest {
   background-color: var(--rest-bg-color);
